@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h1 id="greeting">Hello, I'm Ilya</h1>
+    <h2 id="headline">I'm a fullstack developer</h2>
+    <section class="portfolio">
+      <h3>Welcome to My Portfolio</h3>
+      <p class="intro">I develop websites</p>
+    </section>
+
+    <button id="changeText">change text</button>
+    <button id="changeTheme">Light/Dark theme</button>
+
+    <section class="about">
+      <h3>About Me</h3>
+      <p class="bio">
+        I'm k, a fullstack developer who loves building websites.
+      </p>
+
+      <p id="status">Currently learning jQuery!</p>
+
+      <ul id="funFacts">
+        <li>I love coffee</li>
+        <li>I use Fedora, btw!</li>
+        <li>My goal is to build my own startup</li>
+      </ul>
+
+      <button id="hideBtn">Hide</button>
+      <button id="showBtn">Show</button>
+      <button id="toggleBtn">Toggle</button>
+    </section>
+
+    <section class="gallery">
+      <h3>Gallery</h3>
+      <img
+        src="images/eiffeltower.webp"
+        alt="eiffeltower"
+        class="gallery-img"
+      />
+      <img src="images/notre-dame.webp" alt="eiffeltower" class="gallery-img" />
+      <br />
+      <button id="fadeInBtn">Fade In</button>
+      <button id="fadeOutBtn">Fade Out</button>
+      <button id="fadeToggleBtn">Fade Toggle</button>
+    </section>
+
+    <section class="favourites">
+      <h3>My Favorites</h3>
+
+      <h4 class="panel-title">My Favorite Music [Click me]</h4>
+      <div class="panel">
+        <p>
+          I love metal, industrial rock. My favorite music group is Rammstein
+        </p>
+      </div>
+
+      <h4 class="panel-title">My Favorite Movie [Click me]</h4>
+      <div class="panel">
+        <p>Interstellar, because of its story and soundtrack.</p>
+      </div>
+
+      <h4 class="panel-title">My Favorite Subject [Click me]</h4>
+      <div class="panel">
+        <p>AMCS, I enjoy solving math tasks.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3>Skills</h3>
+      <ul id="skill-list">
+        <li class="skill-item">
+          Python
+          <div class="bar-container">
+            <div class="bar" data-level="90"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          C#
+          <div class="bar-container">
+            <div class="bar" data-level="70"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          JavaScript
+          <div class="bar-container">
+            <div class="bar" data-level="60"></div>
+          </div>
+        </li>
+        <li class="skill-item">
+          C++
+          <div class="bar-container">
+            <div class="bar" data-level="45"></div>
+          </div>
+        </li>
+      </ul>
+
+      <input type="text" id="skillInput" placeholder="enter a skill" />
+      <button id="addSkillBtn">Add Skill</button>
+      <button id="prependSkillBtn">Prepend Skill</button>
+      <button id="removeSkillBtn">Remove Skill</button>
+      <button id="animateSkillsBtn">Animate My Skills</button>
+    </section>
+
+    <section class="links">
+      <h3>My Links</h3>
+      <a href="https://github.com/anommanager" class="link">GitHub</a>
+      <br />
+      <button id="changeLinkBtn">Change Link</button>
+    </section>
+
+    <section class="contact">
+      <h3>Contact Form</h3>
+
+      <form id="contactForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Your name" />
+        <br />
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="you@example.com" />
+      </form>
+
+      <h4>Live Preview</h4>
+      <p>Name: <span id="namePreview"></span></p>
+      <p>Email: <span id="emailPreview"></span></p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

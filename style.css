@@ -1,0 +1,33 @@
+html {
+  padding: 10px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.panel {
+  display: none;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.panel-title {
+  cursor: pointer;
+}
+
+.skill-item {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.bar-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.bar {
+  width: 0;
+  height: 20px;
+  background: teal;
+}
